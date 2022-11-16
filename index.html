@@ -61,24 +61,83 @@
     <li><a class="bi bi-cart-dash" href=""></a></li>
     <li><a class="bi bi-person-circle" href=""></a></li>
    </div>
-
 </header>
-    <section id="slider">
+    <section id="Slider">
         <div class="aspect-ratio-169">
             <img src="images/anhnen.jpg" >
             <img src="images/cafe1.jpg" >
             <img src="images/cafe2.jpg" >
         </div>
+        <div class="dot-container">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
     </section>
-    
+    <!---------------------------- app-container------------------------->
+    <section class="app-container">
+        <p>Tải ứng dụng</p>
+        <div class="app-google">
+            <img src="images/appstore.png">
+            <img src="images/googleplay.png"> 
+        </div>
+        <p>Nhập bản tin</p>
+        <input type="text" placeholder="Nhập email của bạn...">
+    </section>
+   <!--------------------------- footer----------------------------------->
+    <div class="footer-top">
+        <li><a href=""><img src="images/dathongbao.png"></a></li>
+        <li><a href="">Liên hệ</a></li>
+        <li><a href="">Tuyển dụng</a></li>
+        <li><a href="">Giới thiệu</a></li>
+        <li>
+            <a href=""<i class="bi bi-facebook"></i></a>
+            <a href=""<i class="bi bi-google"></i></a>
+            <a href=""<i class="bi bi-youtube"></i></a>
+        </li>
+    </div>
 </body>
 <script>
+const header = document.querySelector("header")
+window.addEventListener("scroll",function(){
+    x = window.pageYOffset
+    if(x>0){
+        header.classList.add("sticky")
+    }
+    else{
+        header.classList.remove("sticky")
+    }
+})
+
+
+
 const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
+const imgContainer = document.querySelector('.aspect-ratio-169')
+const dotIten = document.querySelectorAll(".dot")
+let imgNuber = imgPosition.length
+let index = 0
 // console.log(imgPosition)
 imgPosition.forEach(function(image,index){
-// console.log(image,index)
-// image.style.
+    image.style.left = index*100 + "%"
+    dotIten[index].addEventListener("click",function(){
+    slider(index)
+    })
 })
+function imgSlide (){
+    index++;
+    console.log(index)
+    if (index>=imgNuber){index=0}
+    slider (index)
+   
+}
+function slider(index){
+    imgContainer.style.left = "-" +index*100+ "%" 
+    const dotActive = document.querySelector('.active')
+    dotActive.classList.remove("active")
+    dotIten[index].classList.add("active")
+}
+setInterval(imgSlide,5000)
+
 </script>
 
 
