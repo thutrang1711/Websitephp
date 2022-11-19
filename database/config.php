@@ -1,5 +1,5 @@
 <?php
 define('HOST', 'localhost');
 define('USERNAME', 'root');
-define('PASSWORD', 'mysql');
+define('PASSWORD', '');
 define('DATABASE', 'asm_php1');
