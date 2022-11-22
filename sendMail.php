@@ -76,9 +76,9 @@
 
     <?php
     //nhúng thư viện vào để dùng
-    require "PHPMailer-master/src/PHPMailer.php";
-    require "PHPMailer-master/src/SMTP.php";
-    require 'PHPMailer-master/src/Exception.php';
+    // require "PHPMailer-master/src/PHPMailer.php";
+    // require "PHPMailer-master/src/SMTP.php";
+    // require 'PHPMailer-master/src/Exception.php';
 
     if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $name = $_POST['name']; // lấy ra tên của bạn
