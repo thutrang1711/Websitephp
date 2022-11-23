@@ -160,11 +160,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id_user`, `hoten`, `username`, `password`, `phone`, `email`) VALUES
-(7, 'Nguyễn Đăng Thành', 'AdminThanh', 'thanh1010', '+84387578520', 'bossryo68@gmail.com'),
-(8, 'thanh dang', 'thanhthanh', 'thanhthanh', '0387578520', 'bossryo6811@gmail.com'),
-(55, 'thanh dang', 'thanh0990909', 'thanh10', '0387578520', 'bossryoa68@gmail.com'),
-(57, 'thanh dang', 'thanh', 'thanh', '0387578520', 'bossryo681@gmail.com'),
-(58, 'thanh dang', 'LoginLogin', 'thanh', '0387578520', 'bossryo6Login8@gmail.com');
+(7, 'Minh quân', 'admin', 'admin', '+84387578520', 'minhquan@gmail.com'),
+(8, 'toanem', 'toan', 'toan', '0387578520', 'toanem@gmail.com'),
+(55, 'ngocthuan', 'thuannui', 'thuanqq', '0387578520', 'ngocthuan@gmail.com'),
+(57, 'bao11', 'baoem', 'baodoibaodom', '0387578520', 'baodoi@gmail.com');
 
 --
 -- Chỉ mục cho các bảng đã đổ
