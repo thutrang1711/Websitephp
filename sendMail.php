@@ -73,57 +73,6 @@
         </div>
         <button name="send"> Send</button>
     </form>
-
-    <?php
-    //nhúng thư viện vào để dùng
-    // require "PHPMailer-master/src/PHPMailer.php";
-    // require "PHPMailer-master/src/SMTP.php";
-    // require 'PHPMailer-master/src/Exception.php';
-
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
-        $name = $_POST['name']; // lấy ra tên của bạn
-        $email = $_POST['email']; // Email cần gửi đến
-        $subject = $_POST['subject']; // Tiêu đề email
-        $message = $_POST['message']; // Nội dung email
-        $mail = new PHPMailer\PHPMailer\PHPMailer(true);  //true: cho phép các trường hợp ngoại lệ
-
-        // TRY có thể nó sẽ xảy ra ngoại lệ
-        try {
-            //Server settings
-            $mail->isSMTP(); // gửi mail SMTP
-            $mail->CharSet  = "utf-8";
-            $mail->Host = 'smtp.gmail.com';  // khai báo SMTP servers
-            $mail->SMTPAuth = true; // Enable authentication
-            $nguoigui = 'minhquandam@gmail.com'; // Tài khoản Email
-            $matkhau = 'lmaovjp'; // Mật khẩu Email
-            $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
-            $mail->Port = 465;  // Port kết nối: khai báo 465 hoặc 587                
-
-
-            // Recipients - Người nhận
-            $tennguoigui = $name; // Tên người gửi lấy từ form nhập
-            $mail->Username = $nguoigui; // SMTP username
-            $mail->Password = $matkhau;   // SMTP password
-            $mail->setFrom($nguoigui, $tennguoigui); //mail và tên người nhận 
-            $to = $email; // Email cần gửi đến lấy từ form nhập
-            $to_name = "Đàm Minh Quân"; // Tên người cần gửi đến
-
-            // Content 
-            $mail->addAddress($to, $to_name); //mail và tên người nhận  
-            $mail->isHTML(true);  // Khai báo nội dung email hiển thị định dạng html
-            $mail->Subject = $subject; // Tiêu đề email
-            $mail->Body = $message; // Nội dung email
-
-            $mail->send(); // Tiến hành gửi thư
-            echo '<center>Đã gửi mail xong</center>';
-        }
-        // nếu ở trên lỗi thì CATCH sẽ chạy
-        catch (Exception $e) {
-            echo 'Mail không gửi được. Lỗi: ', $mail->ErrorInfo;
-        }
-    }
-    ?>
-    
 </body>
 <?php require_once('layout/footer.php'); ?>
 
