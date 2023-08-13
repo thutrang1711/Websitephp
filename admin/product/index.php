@@ -92,11 +92,7 @@ require_once('../database/dbhelper.php');
                     <td>' . $item['number'] . '</td>
                     <td>' . $item['content'] . '</td>
                     <td>' . $item['id_category'] . '</td>
-                    <td>
-                        <a href="add.php?id=' . $item['id'] . '">
-                            <button class=" btn btn-warning">Sửa</button> 
-                        </a> 
-                    </td>
+                 
                     <td>            
                     <button class="btn btn-danger" onclick="deleteProduct(' . $item['id'] . ')">Xoá</button>
                     </td>

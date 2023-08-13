@@ -51,7 +51,7 @@
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="product/">xem chi tiết➜</a></p>
+                            <p><a href="product/">xem chi tiết ➜</a></p>
                         </div>
                         <div class="sp kh">
                             <p>Khách hàng</p>
@@ -61,7 +61,7 @@
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="">xem chi tiết➜</a></p>
+                            <p><a href="">xem chi tiết ➜</a></p>
                         </div>
                         <div class="sp dm">
                             <p>Danh mục</p>
@@ -71,7 +71,7 @@
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="category/">xem chi tiết➜</a></p>
+                            <p><a href="category/">xem chi tiết ➜</a></p>
                         </div>
                         <div class="sp dh">
                             <p>Đơn hàng</p>
@@ -81,7 +81,7 @@
                             $result = mysqli_query($conn, $sql);
                             echo '<span>' . mysqli_num_rows($result) . '</span>';
                             ?>
-                            <p><a href="dashboard.php">xem chi tiết➜</a></p>
+                            <p><a href="dashboard.php">xem chi tiết ➜</a></p>
                         </div>
                     </div>
                 </section>

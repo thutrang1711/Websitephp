@@ -13,7 +13,7 @@ require_once('database/dbhelper.php');
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
-    <title>Holy Coffee</title>
+    <title>Codedoan Coffee</title>
 </head>
 
 <body>
@@ -122,7 +122,7 @@ require_once('database/dbhelper.php');
                     <!-- end comment -->
                     <section class="restaurants">
                         <div class="title">
-                            <h1>Thực đơn tại quán <span class="green">Holy coffee</span></h1>
+                            <h1>Thực đơn tại quán <span class="green">Codedoan coffee</span></h1>
                         </div>
                         <div class="product-restaurants">
                             <div class="row">

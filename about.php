@@ -19,12 +19,12 @@
             </section>
             <section class="main">
                 <div class="row">
-                    <h3>Holy Coffee là gì?</h3>
-                    <p>Tại Holly, chúng tôi hiểu rằng một bữa ăn ngon có thể mang lại cho bạn sức khoẻ và tinh thần thoải mái nhất.</p>
+                    <h3>Codedoan Coffee là gì?</h3>
+                    <p>Tại Codedoan, chúng tôi hiểu rằng một bữa ăn ngon có thể mang lại cho bạn sức khoẻ và tinh thần thoải mái nhất.</p>
                 </div>
                 <div class="row">
-                    <h3>Holly Coffee hoạt động như thế nào?</h3>
-                    <p>Holly Coffee hoạt động từ 7h đến 22h hằng ngày, tuỳ theo khu vực của bạn và thời gian mở cửa cụ thể.</p>
+                    <h3>Codedoan Coffee hoạt động như thế nào?</h3>
+                    <p>Codedoan Coffee hoạt động từ 7h đến 22h hằng ngày, tuỳ theo khu vực của bạn và thời gian mở cửa cụ thể.</p>
                 </div>
                 <div class="row">
                     <img src="images/bg/anhnen.jpg">
