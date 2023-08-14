@@ -13,7 +13,7 @@ require_once('database/dbhelper.php');
     <link rel="stylesheet" href="css/details.css">
     <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <title>Codedoan Coffee</title>
+    <title>TNS FOOD</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@ require_once('database/dbhelper.php');
         <header>
             <div class="container">
                 <section class="logo">
-                    <a href="index.php"><img src="images/product-recently/Logo1.jpg"></a>
+                    <a href="index.php"><img src="images/product-recently/logo.png"></a>
                 </section>
                 <nav>
                     <ul>
